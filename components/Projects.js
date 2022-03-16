@@ -32,7 +32,7 @@ function Projects() {
                 id: 4,
                 title: "Google Search clone",
                 description: "Next Js, Google Search Api, Tailwindcss, Pagination",
-                href: '#',
+                href: 'google-clone-78guf4oyz-victortommutua.vercel.app',
                 imageSrc: '../google.png',
                 imageAlt: "Front of men's Basic Tee in black.",
               },
