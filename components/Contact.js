@@ -1,8 +1,27 @@
 /* eslint-disable @next/next/no-img-element */
 import { ArrowCircleRightIcon } from '@heroicons/react/outline'
 import { LockClosedIcon } from '@heroicons/react/solid'
+import axios from 'axios';
+import { useState } from 'react';
 
 export default function Contact() {
+  const [email, setEmail] = useState("");
+  const [state, setState] = useState("IDLE");
+  const [errorMessage, setErrorMessage] = useState(null);
+
+  const subscribe = async () => {
+    setState("LOADING");
+    setErrorMessage(null);
+
+    try{
+      const response = await axios.post("/api/newsletter",{email});
+      setState("SUCCESS");
+    }
+    catch (e) {
+      setErrorMessage(e.response.data.error);
+      setState("ERROR");
+    }
+  }
   return (
     <>
       <div className="min-h-full flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
@@ -30,9 +49,9 @@ export default function Contact() {
                   Email address
                 </label>
                 <input
-                  id="email-address"
-                  name="email"
                   type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                   autoComplete="email"
                   required
                   className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
@@ -48,8 +67,12 @@ export default function Contact() {
 
             <div>
               <button
-                type="submit"
-                className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                type="button"
+                disabled={state === "LOADING"}
+                onClick={subscribe}
+                className={`group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md 
+                text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500
+                ${state=== "LOADING" ? "button-gradient-loading" : ""}`}
               >
                 <span className="absolute left-0 inset-y-0 flex items-center pl-3">
                   <ArrowCircleRightIcon className="h-5 w-5 text-indigo-500 group-hover:text-indigo-400" aria-hidden="true" />
@@ -57,6 +80,12 @@ export default function Contact() {
                 Submit
               </button>
             </div>
+            {state === "SUCCESS" && (
+              <p className='w-1/2 mt-2 text-green-600'>Success!</p>
+            )}
+            {state === "ERROR" && (
+              <p className='w-1/2 mt-2 text-red-600'>{errorMessage}</p>
+            )}
           </form>
         </div>
       </div>
