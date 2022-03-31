@@ -37,7 +37,7 @@ export default function Header() {
                   <img
                     className="block lg:hidden h-8 w-auto"
                     src="../svg.svg"
-                    alt="Workflow"
+                    alt="Logo"
                   />
                 </div>
                 <div className="hidden sm:block sm:ml-6">
@@ -72,7 +72,7 @@ export default function Header() {
                     <Menu.Button className="bg-gray-800 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
                       <img
                         className="h-8 w-8 rounded-full motion-safe:animate-spin"
-                        src="https://scontent.fnuu1-1.fna.fbcdn.net/v/t39.30808-6/264566663_2096771347144151_3357368712747444329_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeHYAWlwG1hiz12G_GbdlXd7VMN4ofWpvulUw3ih9am-6Z3E78R7HI85oiPHWcbJ0zzp1FxAVRCK0_QgM7UUZJMx&_nc_ohc=HeenPf_HrI0AX_5eZcZ&_nc_zt=23&_nc_ht=scontent.fnuu1-1.fna&oh=00_AT-Z415YlrajmE-0fv9gOPtMq9pAYBG-xxOh8g49ud9QYA&oe=622FA56B"
+                        src="https://scontent.fnbo13-1.fna.fbcdn.net/v/t39.30808-6/264566663_2096771347144151_3357368712747444329_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeHYAWlwG1hiz12G_GbdlXd7VMN4ofWpvulUw3ih9am-6Z3E78R7HI85oiPHWcbJ0zzp1FxAVRCK0_QgM7UUZJMx&_nc_ohc=m0j399JUEvkAX9Ycx3h&_nc_zt=23&_nc_ht=scontent.fnbo13-1.fna&oh=00_AT9MuXfzgvyVzwPIiUGTCofu5C7VquI3Lond12ZG3aA9aA&oe=62495AAB"
                         alt=""
                       />
                     </Menu.Button>
