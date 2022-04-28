@@ -5,16 +5,12 @@ import React from 'react'
 function Profile() {
   return (
     <div className='mt-5 p-10 items-center sm:flex justify-between'>
-      <div className='items-center flex-1'>
+      <div className='items-center flex-1 rounded-full'>
           <img
-          className='mx-auto sm:mx-0 cursor-pointer rounded-full'
+          className='h-40 w-40 mx-auto sm:mx-0 cursor-pointer rounded-full'
           loading='lazy'
-          src="https://scontent.fnbo13-1.fna.fbcdn.net/v/t39.30808-6/264566663_2096771347144151_3357368712747444329_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeHYAWlwG1hiz12G_GbdlXd7VMN4ofWpvulUw3ih9am-6Z3E78R7HI85oiPHWcbJ0zzp1FxAVRCK0_QgM7UUZJMx&_nc_ohc=m0j399JUEvkAX9Ycx3h&_nc_zt=23&_nc_ht=scontent.fnbo13-1.fna&oh=00_AT9MuXfzgvyVzwPIiUGTCofu5C7VquI3Lond12ZG3aA9aA&oe=62495AAB"
-          width={200}
-          height={200}
-          layout="fill"
-          objectfit= 'contain'
-          alt=""
+          src="https://bit.ly/37UsMyW"
+          alt="avatar"
           />
       </div>
       <div className='flex-1 mt-5 items-center'>
