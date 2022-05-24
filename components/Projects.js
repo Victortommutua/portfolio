@@ -62,19 +62,19 @@ function Projects() {
               },
               {
                 id: 8,
-                title: "Nft",
-                description: "Next-js, Tailwindcss, Metamask, Rinkeby test Network",
-                href: 'https://nft-p9a1be3ca-victortommutua.vercel.app/',
-                imageSrc: '../nft.png',
-                imageAlt: "nft-img.",
-              },
-              {
-                id: 9,
                 title: "Twitter-clone-2",
                 description: "TypeScript, Tailwindcss, NextAuth, Sanity CMS",
                 href: '',
                 imageSrc: '../twitter-clone-2.png',
                 imageAlt: "Twitter-clone-img.",
+              },
+              {
+                id: 9,
+                title: "Nft",
+                description: "Next-js, Tailwindcss, Metamask, Rinkeby test Network",
+                href: 'https://nft-p9a1be3ca-victortommutua.vercel.app/',
+                imageSrc: '../nft.png',
+                imageAlt: "nft-img.",
               },
     ]
   return (
