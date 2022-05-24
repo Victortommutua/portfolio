@@ -6,7 +6,7 @@ import Profile from '../components/Profile'
 import Projects from '../components/Projects'
 import Skills from '../components/Skills'
 export default function Home() {
-  //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
+  //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
   return (
     <div>
       <Head> 
