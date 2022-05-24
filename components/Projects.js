@@ -10,7 +10,7 @@ function Projects() {
                 description: "React Js, tmdb API, Styled components, Stripe API",
                 href: '#',
                 imageSrc: "../netflix.png",
-                imageAlt: "Front of men's Basic Tee in black.",
+                imageAlt: "Netflix-clone-img.",
               },
               {
                 id: 2,
@@ -18,7 +18,7 @@ function Projects() {
                 description: "Next Js, Tailwindcss, tmdb API",
                 href: '#',
                 imageSrc: '../hulu.png',
-                imageAlt: "Front of men's Basic Tee in black.",
+                imageAlt: "Hulu-clone-img.",
               },
               {
                 id: 3,
@@ -26,15 +26,15 @@ function Projects() {
                 description: "Typescript, Next Js, Sanity Cms, Tailwindcss",
                 href: '#',
                 imageSrc: '../medium.png',
-                imageAlt: "Front of men's Basic Tee in black.",
+                imageAlt: "Medium-blog-clone-img.",
               },
               {
                 id: 4,
                 title: "Google Search clone",
                 description: "Next Js, Google Search Api, Tailwindcss, Pagination",
-                href: 'google-clone-78guf4oyz-victortommutua.vercel.app',
+                href: 'https://google-clone-78guf4oyz-victortommutua.vercel.app',
                 imageSrc: '../google.png',
-                imageAlt: "Front of men's Basic Tee in black.",
+                imageAlt: "Google-search-clone-img.",
               },
               {
                 id: 5,
@@ -42,7 +42,7 @@ function Projects() {
                 description: "Next Js, Tailwindcss, NextAuth, Firebase, Recoil",
                 href: '#',
                 imageSrc: '../twitter.png',
-                imageAlt: "Front of men's Basic Tee in black.",
+                imageAlt: "Twitter-clone-img.",
               },
               {
                 id: 6,
@@ -50,7 +50,7 @@ function Projects() {
                 description: "Next Js, Tailwindcss, Custom Search",
                 href: '#',
                 imageSrc: '../airbnb.png',
-                imageAlt: "Front of men's Basic Tee in black.",
+                imageAlt: "Airbnb-clone-img.",
               },
               {
                 id: 7,
@@ -58,7 +58,23 @@ function Projects() {
                 description: "Next Js, Tailwindcss, NextAuth,Fakestore API, Redux, Stripe API",
                 href: '',
                 imageSrc: '../amazon.png',
-                imageAlt: "Front of men's Basic Tee in black.",
+                imageAlt: "Amazon-clone-img.",
+              },
+              {
+                id: 8,
+                title: "Nft",
+                description: "Next-js, Tailwindcss, Metamask, Rinkeby test Network",
+                href: 'https://nft-p9a1be3ca-victortommutua.vercel.app/',
+                imageSrc: '../nft.png',
+                imageAlt: "nft-img.",
+              },
+              {
+                id: 9,
+                title: "Twitter-clone-2",
+                description: "TypeScript, Tailwindcss, NextAuth, Sanity CMS",
+                href: '',
+                imageSrc: '../twitter-clone-2.png',
+                imageAlt: "Twitter-clone-img.",
               },
     ]
   return (

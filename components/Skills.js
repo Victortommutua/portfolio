@@ -102,6 +102,7 @@ const technologies = [
               </div>
             ))}
           </div>
+          <p className="font-bold">swipe left</p>
         </div>
       </div>
     )
