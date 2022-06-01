@@ -3,6 +3,7 @@ import { ArrowCircleRightIcon } from '@heroicons/react/outline'
 import { LockClosedIcon } from '@heroicons/react/solid'
 import axios from 'axios';
 import { useState } from 'react';
+import toast from 'react-hot-toast'
 
 export default function Contact() {
   const [email, setEmail] = useState("");
@@ -41,7 +42,7 @@ export default function Contact() {
               </p>
             </p>
           </div>
-          <form className="mt-8 space-y-6" action="#" method="POST">
+          <form className="mt-8 space-y-6" method="post">
             <input type="hidden" name="remember" defaultValue="true" />
             <div className="rounded-md shadow-sm -space-y-px">
               <div>
@@ -81,10 +82,10 @@ export default function Contact() {
               </button>
             </div>
             {state === "SUCCESS" && (
-              <p className='w-1/2 mt-2 text-green-600'>Success!</p>
+              <p className='w-1/2 mt-2 text-green-600'>{toast.success('successfully send email')}</p>
             )}
             {state === "ERROR" && (
-              <p className='w-1/2 mt-2 text-red-600'>{errorMessage}</p>
+              <p className='w-1/2 mt-2 text-red-600'>{toast.error(errorMessage)}</p>
             )}
           </form>
         </div>

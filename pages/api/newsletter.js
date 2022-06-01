@@ -1,6 +1,5 @@
 /* eslint-disable import/no-anonymous-default-export */
 import axios from "axios";
-
 function getRequestParams(email){
     const API_KEY= process.env.MAILCHIMP_API_KEY;
     const LIST_ID = process.env.MAILCHIMP_LIST_ID;
@@ -30,7 +29,7 @@ function getRequestParams(email){
 export default async (req, res) =>{
     const {email} = req.body;
 
-    if(!email || !email.length){
+    if(!email){
         return res.status(400).json({
             error: "Forgot to add your email",
         });
@@ -44,7 +43,7 @@ export default async (req, res) =>{
         return res.status(201).json({error: null});
     } catch (error){
         return res.status(400).json({
-            error: `Error!, Send me an email @mutuavictor801@gmail.com`
+            error: `Error! Send me an email to mutuavictor801@gmail.com`
         });
     }
 };

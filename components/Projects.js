@@ -76,6 +76,14 @@ function Projects() {
                 imageSrc: '../nft.png',
                 imageAlt: "nft-img.",
               },
+                            {
+                id: 10,
+                title: "Coinbase Blockchain Web 3.0",
+                description: "Next-js, Sanity.io , thirdweb, Tailwindcss, Metamask",
+                href: '/',
+                imageSrc: '../coinbase.png',
+                imageAlt: "coinbase-img.",
+              },
     ]
   return (
     <div className='p-10 grid sm:grid-cols-2 md:grid-cols-3 space-x-7'>
